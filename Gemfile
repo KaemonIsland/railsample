@@ -7,6 +7,8 @@ ruby '2.4.0'
 gem 'rails', '~> 5.2.1'
 gem 'bootstrap-sass', '3.3.7'
 gem 'jquery-rails', '4.3.1'
+gem 'carrierwave',             '1.2.2'
+gem 'mini_magick',             '4.7.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -54,6 +56,7 @@ end
 
 group :production do
   gem 'pg'
+  gem 'fog', '1.42'
 end
 
 group :test do
